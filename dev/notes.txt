@@ -3,6 +3,7 @@
 - javaScript class: TodoManager.js
 
 - improt npm package 
+	- type="module"	
 	- node_modules mit Git
 	- .gitignore
 		- node_modules

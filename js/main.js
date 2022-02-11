@@ -1,1 +1,3 @@
-console.log('js test');
+const contentElem = document.querySelector('.content');
+
+contentElem.innerHTML = 'test';
