@@ -20,6 +20,12 @@ export class TodoManager {
 		this.todoManagerElem.style.backgroundColor = 'tan';
 		this.titleElem.innerHTML = this.title;
 		this.buttonElem.innerHTML = this.buttonText;
+		this.buttonElem.addEventListener('click', this.handleButtonClick);
+	}
+
+	handleButtonClick = () => {
+		this.todos.push('added');
+		console.log(this.todos);
 	}
 
 
