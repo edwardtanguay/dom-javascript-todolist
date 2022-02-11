@@ -23,12 +23,16 @@ export class TodoManager {
 		this.titleElem.innerHTML = this.title;
 		this.buttonElem.innerHTML = this.buttonText;
 		this.buttonElem.addEventListener('click', this.handleButtonClick);
+
+		this.inputElem.focus();
 	}
 
 	handleButtonClick = () => {
 		const inputValue = this.inputElem.value;
 		this.todos.push(inputValue);
 		this.displayTodos();
+		this.inputElem.value = '';
+		this.inputElem.focus();
 	}
 
 	displayTodos() {
