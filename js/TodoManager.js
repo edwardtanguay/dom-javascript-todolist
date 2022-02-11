@@ -1,8 +1,8 @@
 export class TodoManager {
 	constructor() {
-		this.name = 'Todo Manager 2222';
+		this.title = 'Todo Manager';
 	}
-	getName() {
-		return this.name;
+	getTitle() {
+		return this.title;
 	}
 }

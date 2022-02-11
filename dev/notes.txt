@@ -1,8 +1,8 @@
 - x index.html/main.js/main.css: dummy text
 - x main.scss
-- .. javaScript class: TodoManager.js
+- x javaScript class: TodoManager.js
 	- x insert type="module"	
-	- .. show dummy text with class
+	- x show dummy text with class
 
 - improt npm package 
 	- node_modules mit Git
