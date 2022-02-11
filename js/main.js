@@ -1,3 +1,6 @@
+import { TodoManager } from './TodoManager.js';
+
+const todoManager = new TodoManager();
 const contentElem = document.querySelector('.content');
 
-contentElem.innerHTML = 'test';
+contentElem.innerHTML = todoManager.getName();
