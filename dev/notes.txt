@@ -3,8 +3,7 @@
 - x javaScript class: TodoManager.js
 	- x insert type="module"	
 	- x show dummy text with class
-
-- improt npm package 
+- .. import npm package 
 	- node_modules mit Git
 	- .gitignore
 		- node_modules
