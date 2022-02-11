@@ -2,3 +2,7 @@
 - main.scss
 - javaScript class: TodoManager.js
 
+- improt npm package 
+	- node_modules mit Git
+	- .gitignore
+		- node_modules
