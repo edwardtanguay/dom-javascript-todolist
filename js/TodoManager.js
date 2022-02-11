@@ -8,6 +8,7 @@ export class TodoManager {
 		this.todoManagerElem = this.document.querySelector('.todoManager');
 		this.titleElem = this.document.querySelector('h2');
 		this.buttonElem = this.todoManagerElem.querySelector('button');
+		this.inputElem = this.todoManagerElem.querySelector('input');
 
 		this.title = 'Todo Manager';
 		this.buttonText = 'Add Todo';
@@ -24,7 +25,8 @@ export class TodoManager {
 	}
 
 	handleButtonClick = () => {
-		this.todos.push('added');
+		const inputValue = this.inputElem.value;
+		this.todos.push(inputValue);
 		console.log(this.todos);
 	}
 
