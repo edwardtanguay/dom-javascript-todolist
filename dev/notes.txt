@@ -3,7 +3,4 @@
 - x javaScript class: TodoManager.js
 	- x insert type="module"	
 	- x show dummy text with class
-- .. import npm package 
-	- node_modules mit Git
-	- .gitignore
-		- node_modules
+- .. input box and button, when button click, show text

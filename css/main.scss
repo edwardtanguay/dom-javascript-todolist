@@ -3,4 +3,14 @@ body {
 	font-size: 2rem;
 	padding: 0 20px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+	.todoManager {
+		width: 500px;
+		height: 300px;
+		padding: 10px;
+
+		h2 {
+			margin: 0 0 10px 0;
+		}
+	}
 }

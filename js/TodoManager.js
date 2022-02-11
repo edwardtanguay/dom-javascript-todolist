@@ -1,9 +1,14 @@
 
 export class TodoManager {
-	constructor() {
+	constructor(document) {
+		this.document = document;
+		this.todoManagerElem = this.document.querySelector('.todoManager');
+		this.titleElem = this.document.querySelector('h2');
 		this.title = 'Todo Manager';
+		this.initialize();
 	}
-	getTitle() {
-		return this.title;
+	initialize() {
+		this.todoManagerElem.style.backgroundColor = 'tan';
+		this.titleElem.innerHTML = this.title;
 	}
 }
