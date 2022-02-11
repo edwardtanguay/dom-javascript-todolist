@@ -9,6 +9,7 @@ export class TodoManager {
 		this.titleElem = this.document.querySelector('h2');
 		this.buttonElem = this.todoManagerElem.querySelector('button');
 		this.inputElem = this.todoManagerElem.querySelector('input');
+		this.todosElem = this.todoManagerElem.querySelector('.todos');
 
 		this.title = 'Todo Manager';
 		this.buttonText = 'Add Todo';
@@ -16,7 +17,7 @@ export class TodoManager {
 
 		this.initialize();
 	}
-	
+
 	initialize() {
 		this.todoManagerElem.style.backgroundColor = 'tan';
 		this.titleElem.innerHTML = this.title;
@@ -27,7 +28,11 @@ export class TodoManager {
 	handleButtonClick = () => {
 		const inputValue = this.inputElem.value;
 		this.todos.push(inputValue);
-		console.log(this.todos);
+		this.displayTodos();
+	}
+
+	displayTodos() {
+		this.todosElem.innerHTML = 'test';
 	}
 
 
