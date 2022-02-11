@@ -32,7 +32,11 @@ export class TodoManager {
 	}
 
 	displayTodos() {
-		this.todosElem.innerHTML = 'test';
+		this.todosElem.innerHTML = `
+			${this.todos.map(todo => {
+				return '<div>' + todo + '</div>';
+			}).join('')}	
+		`;
 	}
 
 
